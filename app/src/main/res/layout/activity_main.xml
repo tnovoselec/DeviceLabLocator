@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tnovoselec.android.devicelocator.MainActivity">
+
+    <EditText
+        android:id="@+id/deviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Device Id" />
+
+    <EditText
+        android:id="@+id/deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Device Name"
+        app:layout_constraintTop_toBottomOf="@id/deviceId" />
+
+    <Button
+        android:id="@+id/deviceRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register device"
+        app:layout_constraintTop_toBottomOf="@id/deviceName"
+        />
+
+</android.support.constraint.ConstraintLayout>
